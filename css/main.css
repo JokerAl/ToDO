@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    background: #F09819; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F09819 , #EDDE5D); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F09819 , #EDDE5D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.add-task {
+    margin: 20px auto;
+}
+
+.label-name {
+    display: block;
+    margin: 20px 0;
+    width: 70%;
+    float: left;
+}
+
+.name {
+    width: 90%;
+}
+
+.submit {
+    background: transparent;
+    border: navajowhite;
+    width: 30px;
+    font-size: 26px;
+    vertical-align: bottom;
+}
+.submit:hover:before {
+    color: #00e500;
+}
+.del {
+    background: transparent;
+    border: navajowhite;
+    width: 30px;
+    font-size: 20px;
+    }
+.del:hover:before {
+    color: #e50004;
+}
+
+.template {
+    display: none;
+}
+h1{
+    text-align: center;
+}
+.task {
+    display: block;
+    margin: 10px 0;
+}
+#tasks{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 90%;
+    background-color: white;
+}
+#task_name{
+    border-radius: 10px;
+    border-color: #F09819;
+}
+.task-text {
+    display: inline;
+}
+
+.close {
+    text-decoration: line-through;
+}
